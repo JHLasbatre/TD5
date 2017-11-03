@@ -146,6 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BnS.cpp" />
     <ClCompile Include="Option.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
