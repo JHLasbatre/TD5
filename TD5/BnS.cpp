@@ -3,7 +3,7 @@
 #include "Header.h"
 using namespace std;
 
-BnS::BnS(Option o)
+BnS::BnS(Option o, double t))
 {
 	double r = o.getr();
 	double sigma = o.getSigma();

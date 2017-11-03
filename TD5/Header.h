@@ -33,8 +33,9 @@ class BnS
 private:
 	double d1;
 	double d2;
+	double t;
 public:
-	BnS(Option o);
+	BnS(Option o, double t);
 	//void print()
 
 };
