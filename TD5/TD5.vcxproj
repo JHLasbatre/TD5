@@ -147,6 +147,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BnS.cpp" />
+    <ClCompile Include="CRR.cpp" />
+    <ClCompile Include="Pricer.cpp" />
+    <ClCompile Include="MC.cpp" />
     <ClCompile Include="Option.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>

@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers sources\Pricer">
+      <UniqueIdentifier>{419397de-83b5-4867-b197-ed685c9c3821}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -22,7 +25,16 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="BnS.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers sources\Pricer</Filter>
+    </ClCompile>
+    <ClCompile Include="CRR.cpp">
+      <Filter>Fichiers sources\Pricer</Filter>
+    </ClCompile>
+    <ClCompile Include="Pricer.cpp">
+      <Filter>Fichiers sources\Pricer</Filter>
+    </ClCompile>
+    <ClCompile Include="MC.cpp">
+      <Filter>Fichiers sources\Pricer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

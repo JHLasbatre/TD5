@@ -6,9 +6,19 @@ using namespace std;
 
 void test()
 {
-	Option o = Option(0.025, 10, 25, 2, 21, 0.5);
+	Option o = Option(100, 105, 1, 0, 0.05, 0.2);
 	o.print();
+	BnS b = BnS(*o);
+
+
+	//cout << "N: " << b.N(0.5) << endl;
+
+	cout << "result call: " << b.Call() << endl;
+	cout << "result put: " << b.Put() << endl;
+
 }
+
+
 int main()
 {
 	test();

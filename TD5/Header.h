@@ -1,41 +1,82 @@
 #include <iostream>
 
+
 using namespace std;
+
 
 class Option
 {
-private:
-	double r;
-	double sigma;
+protected:
+	double S;
 	double K;
 	double T;
-	double S;
-	double b;
+	double t;
+	double r;
+	double sigma;
+
 public:
 	//Constructors
-	Option(double _r, double _sigma, double _K, double _T, double _S, double _b);
+	Option(double _S, double _K , double _T, double _t, double _r, double _sigma);
 
-	// Get, Set
-		//Get
+	// Get
 	double getr() { return r; }
 	double getSigma() { return sigma; }
 	double getK() { return K; }
 	double getT() { return T; }
 	double getS() { return S; }
-	double getb() { return b; }
+	double gett() { return t; }
 
+	// Others
 	void print();
+	
 
 };
 
-class BnS
+
+class Pricer
+{
+protected:
+	Option * o;
+
+public:
+	Pricer(Option * o);
+	Pricer() { o = nullptr; }
+};
+
+
+class BnS : public Pricer
 {
 private:
 	double d1;
 	double d2;
-	double t;
-public:
-	BnS(Option o, double t);
-	//void print()
 
+public:
+	//Constructor
+	BnS(Option * o);
+
+	//Other
+	double Call();
+	double Put();
+	double N(double x);
+	
+};
+
+
+class MonteCarlo : public Pricer
+{
+private:
+	double Sinit;
+
+public:
+	MonteCarlo(Option & o);
+};
+
+
+class CRR : public Pricer
+{
+private:
+	double Sinit;
+
+public:
+	CRR(Option & o);
 };
