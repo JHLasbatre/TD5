@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <math.h>
 #include "Header.h"
 
 using namespace std;
@@ -7,10 +7,8 @@ using namespace std;
 #define M_PI 3.14159265358979323846
 
 
-BnS::BnS(Option * o)
+BnS::BnS(Option o)
 {
-	this->o = o;
-
 	double r = o.getr();
 	double sigma = o.getSigma();
 	double K = o.getK();

@@ -36,11 +36,11 @@ public:
 class Pricer
 {
 protected:
-	Option * o;
+	Option o;
 
 public:
-	Pricer(Option * o);
-	Pricer() { o = nullptr; }
+	Pricer(Option o);
+	Pricer();
 };
 
 
@@ -52,7 +52,7 @@ private:
 
 public:
 	//Constructor
-	BnS(Option * o);
+	BnS(Option o);
 
 	//Other
 	double Call();

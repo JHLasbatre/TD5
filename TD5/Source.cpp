@@ -8,7 +8,7 @@ void test()
 {
 	Option o = Option(100, 105, 1, 0, 0.05, 0.2);
 	o.print();
-	BnS b = BnS(*o);
+	BnS b = BnS(o);
 
 
 	//cout << "N: " << b.N(0.5) << endl;

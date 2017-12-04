@@ -4,7 +4,7 @@
 
 using namespace std;
 
-MonteCarlo::MonteCarlo(Option & o) : o(o)
+MonteCarlo::MonteCarlo(Option & o)
 {
 
 }

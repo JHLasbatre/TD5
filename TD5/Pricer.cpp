@@ -5,7 +5,13 @@
 
 using namespace std;
 
-Pricer::Pricer(Option * _o) : o(_o)
+Pricer::Pricer(Option _o) 
 {
+	o = _o;
+}
+
+Pricer::Pricer()
+{
+	o = nullptr;
 }
 
