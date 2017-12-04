@@ -16,7 +16,8 @@ protected:
 
 public:
 	//Constructors
-	Option(double _S, double _K , double _T, double _t, double _r, double _sigma);
+	Option(double _S, double _K , double _T, double _r, double _sigma);
+	Option();
 
 	// Get
 	double getr() { return r; }
@@ -24,7 +25,6 @@ public:
 	double getK() { return K; }
 	double getT() { return T; }
 	double getS() { return S; }
-	double gett() { return t; }
 
 	// Others
 	void print();
@@ -71,7 +71,7 @@ public:
 	MonteCarlo(Option & o);
 };
 
-
+/*
 class CRR : public Pricer
 {
 private:
@@ -80,3 +80,4 @@ private:
 public:
 	CRR(Option & o);
 };
+*/

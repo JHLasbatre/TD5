@@ -14,10 +14,9 @@ BnS::BnS(Option o)
 	double K = o.getK();
 	double T = o.getT();
 	double S = o.getS();
-	double t = o.gett();
 
-	d1 = ((log(S / K) + (r + 0.5 * sigma* sigma)*(T - t))) / (sigma* pow(T - t, 0.5));
-	d2 = d1 - sigma* pow(T - t, 0.5);
+	d1 = ((log(S / K) + (r + 0.5 * sigma* sigma)*T)) / (sigma* pow(T, 0.5));
+	d2 = d1 - sigma* pow(T, 0.5);
 }
 
 double BnS::N(double x)
@@ -31,9 +30,8 @@ double BnS::Call()
 	double sigma = o.getSigma();
 	double K = o.getK();
 	double T = o.getT();
-	double t = o.gett();
 	double S = o.getS();
-	return(S*N(d1) - K*exp(-r*(T-t))*N(d2));
+	return(S*N(d1) - K*exp(-r*T)*N(d2));
 }
 
 double BnS::Put()
@@ -42,7 +40,6 @@ double BnS::Put()
 	double sigma = o.getSigma();
 	double K = o.getK();
 	double T = o.getT();
-	double t = o.gett();
 	double S = o.getS();
-	return(K * exp(-r*(T-t))*N(-d2) - S*N(-d1));
+	return(K * exp(-r*T)*N(-d2) - S*N(-d1));
 }

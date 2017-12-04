@@ -12,6 +12,8 @@ Pricer::Pricer(Option _o)
 
 Pricer::Pricer()
 {
-	o = nullptr;
+	o = Option();
 }
+
+
 
