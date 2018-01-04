@@ -66,9 +66,14 @@ class MonteCarlo : public Pricer
 {
 private:
 	double Sinit;
+	int simulationNumber;
 
 public:
-	MonteCarlo(Option & o);
+	MonteCarlo(Option & o, int _simulationNumber);
+	double europeanCall();
+	double europeanPut();
+	double asianCall();
+	double asianPut();
 };
 
 /*

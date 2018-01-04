@@ -4,7 +4,7 @@
 using namespace std;
 
 
-void test()
+void testBnS()
 {
 	Option o = Option(100, 95, 1, 0.05, 0.2);
 	o.print();
@@ -17,9 +17,18 @@ void test()
 
 }
 
+void testMC()
+{
+	Option o = Option(100, 95, 1, 0.05, 0.2);
+	o.print();
+	MonteCarlo m = MonteCarlo(o, 1000);
+	cout << "result call: " << m.europeanCall() << endl;
+	cout << "result put: " << m.europeanPut() << endl;
+}
 
 int main()
 {
-	test();
+	//testBnS();
+	testMC();
 	return 0;
 }

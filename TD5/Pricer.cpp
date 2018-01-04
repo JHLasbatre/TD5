@@ -15,5 +15,3 @@ Pricer::Pricer()
 	o = Option();
 }
 
-
-
