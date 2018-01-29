@@ -54,9 +54,9 @@ double MonteCarlo::europeanPut()
 		Sk = Sinit * exp((r - pow(sigma, 2) / 2)*T + sigma * sqrt(T) * Z);
 		price += max(K - Sk, 0.0);
 	}
-	return ( (1 / (double)simulationNumber) * exp(-r*T) * price) ;
+	return ( (1/(double)simulationNumber) * exp(-r*T) * price) ;
 }
-
+/*
 double MonteCarlo::asianCall()
 {
 	default_random_engine generator;

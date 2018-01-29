@@ -148,6 +148,7 @@
   <ItemGroup>
     <ClCompile Include="BnS.cpp" />
     <ClCompile Include="CRR.cpp" />
+    <ClCompile Include="EuropeanOption.cpp" />
     <ClCompile Include="Pricer.cpp" />
     <ClCompile Include="MC.cpp" />
     <ClCompile Include="Option.cpp" />
@@ -155,6 +156,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

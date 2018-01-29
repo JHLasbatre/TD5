@@ -13,6 +13,16 @@ Option::Option(double _S, double _K, double _T, double _r, double _sigma)
 	S = _S;
 }
 
+Option::Option(double _S, double _K, double _T, double _r, double _sigma, string _type)
+{
+	r = _r;
+	sigma = _sigma;
+	K = _K;
+	T = _T;
+	S = _S;
+}
+
+
 Option::Option()
 {
 	r = 0.05;
